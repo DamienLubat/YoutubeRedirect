@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Subscription Redirect",
+  "version": "1.0",
+  "description": "Redirige automatiquement de youtube.com vers youtube.com/feed/subscriptions",
+  "icons": {
+    "48": "icon.png"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rules1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": ["https://www.youtube.com/"]
+}
